@@ -4,6 +4,11 @@ import math
 import random
 '''这一版不考虑速度的改变'''
 import numpy
+
+# 代码实现了一个基于ε-greedy策略的动作选择函数。
+# 给定一个动作值函数的预测结果prediction和一个探索率epsilon，函数会以概率1-epsilon选择预测结果中具有最大值的动作，以概率epsilon随机选择一个动作。
+# 其中，np.argmax(prediction)用于找到预测结果中最大值的索引，random.randint(0,8)用于随机选择一个0到8之间的整数作为动作的索引。最后，函数返回选择的动作索引。
+
 #创建环境类
 class AirCombat():
     def __init__(self):
