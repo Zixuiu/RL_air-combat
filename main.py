@@ -5,6 +5,9 @@ from torch import nn
 from matplotlib import pyplot as plt
 from class_env import AirCombat
 
+# 代码实现了一个飞行作战的环境，并使用深度强化学习算法训练一个网络模型来控制红方飞机的动作。
+# 训练过程中，模型根据当前状态预测最优动作，并根据贪婪策略选择动作。训练结束后，使用训练好的模型进行测试，并将结果可视化。
+
 # 定义常量
 CHECKPOINT_DIR = './checkpoint/'
 EPOCH = 1000
